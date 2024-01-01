@@ -1,0 +1,35 @@
+﻿@inject Microsoft.AspNetCore.Hosting.IWebHostEnvironment Environment
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="icon" href="~/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="~/css/navbar.css" />
+</head>
+<body>
+    <header>
+        <nav id="nav-1">
+            <a class="link-1" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+            <a class="link-1" href="https://github.com/orgs/CE-WEBAPP-2023">About Us</a>
+            @if (Environment.IsDevelopment())
+            {
+            <a class="link-1" asp-area="api" asp-controller="api">APIs</a>
+            }
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2023 - Backend_WEBAPP
+        </div>
+    </footer>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

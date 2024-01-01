@@ -1,0 +1,67 @@
+.icon-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+.icon-container span,
+.icon-container p {
+  margin-left: 10px;
+  cursor: default;
+}
+.icon-container span{
+    font-size: 32px;
+}
+.icon-container span:hover{
+  transform: scale(1.1);
+}
+.icon-container p {
+    text-align: left;
+    font-size: 20px;
+}
+/* .clock-icon {
+    font-size: 32px;
+}
+.clock{
+    font-size: 20px;
+} */
+
+#date-in {
+  opacity: 1;
+  width: 120px;
+  transition: all 1s ease;
+}
+
+#date-in.out {
+  width: 0px;
+  opacity: 0;
+}
+#time-in {
+  opacity: 1;
+  width: 85px;
+  transition: all 1s ease;
+}
+
+#time-in.out {
+  width: 0px;
+  opacity: 0;
+}
+@media (max-width: 640px) {
+    .icon-container i,
+    .icon-container p {
+    margin-left: 5px; /* Adjust this value to control the spacing */
+    }
+    .icon-container i{
+        font-size: 26px;
+    }
+    .icon-container p {
+        font-size: 14px;
+    }
+    #date-in {
+      width: 90px;
+    }
+    #time-in {
+      width: 61px;
+    }
+}

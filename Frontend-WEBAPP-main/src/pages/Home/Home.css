@@ -1,0 +1,162 @@
+.homepage {
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-bottom: 350px;
+}
+
+.top-left-image {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(40deg);
+    top: 10vh;
+    right: 90vw;
+    width: 20vh;
+    height: auto;
+}
+
+.mid-left-image {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(90deg);
+    top: 45vh;
+    right: 93.5vw;
+    width: 13.3vh;
+    height: auto;
+}
+
+.top-right-image {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(40deg);
+    top: -6vh;
+    left: 94vw;
+    width: 20vh;
+    height: auto;
+}
+
+.mid-right-image {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-85deg);
+    top: 30vh;
+    left: 93vw;
+    width: 20vh;
+    height: auto;
+}
+
+.bottom-right-image {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-15deg);
+    top: 63.5vh;
+    left: 86.5vw;
+    width: 26.7vh;
+    height: auto;
+}
+
+.homepage h1 {
+    position: absolute;
+    color: white;
+    font-size: 9.33vh;
+    top: 5vh;
+}
+
+.homepage h2 {
+    position: absolute;
+    color: white;
+    font-size: 3.33vh;
+    top: 25vh;
+}
+
+.homepage button {
+    position: absolute;
+    font-weight: bold;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 65vh;
+    font-size: 2vh;
+    border-radius: 9999px;
+    width: 20vh;
+    height: 5.33vh;
+}
+
+.homepage button:hover {
+    background-color: #d3d3d3;
+}
+
+@media (max-width:460px){
+    .top-left-image {
+        top: 20vh;
+        right: 80vw;
+        width: 30vw;
+        height: auto;
+    }
+    
+    .mid-left-image {
+        top: 50vh;
+        right: 83.5vw;
+        width: 20vw;
+        height: auto;
+    }
+    
+    .top-right-image {
+        bottom: 89vh;
+        left: 88vw;
+        width: 30vw;
+        height: auto;
+    }
+    
+    .mid-right-image {
+        top: 35vh;
+        left: 85vw;
+        width: 15vh;
+        height: auto;
+    }
+    
+    .bottom-right-image {
+        top: 65vh;
+        left: 60vw;
+        width: 50vw;
+        height: auto;
+    }
+    
+    .homepage h1 {
+        position: absolute;
+        color: white;
+        font-size: 7vw;
+        top: 5vh;
+    }
+    
+    .homepage h2 {
+        position: absolute;
+        color: white;
+        font-size: 4vw;
+        top: 25vh;
+    }
+
+    .homepage h1 {
+        font-size: 13vw;
+        top: 7vh;
+    }
+    
+    .homepage h2 {
+        font-size: 5.5vw;
+        top: 22vh;
+    }
+    
+    .homepage button {
+        top: 50vh;
+        font-size: 3.5vw;
+        width: 40vw;
+        height: 11.5vw;
+    }
+}

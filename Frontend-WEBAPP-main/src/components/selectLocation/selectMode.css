@@ -1,0 +1,72 @@
+.toggleCheckbox {
+  display: none;
+  }
+.toggleContainer {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 20%;
+  border: 3px solid #502215;
+  border-radius: 25px;
+  background: #ffffff;
+  font-weight: bold;
+  color: #502215;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 40px;
+  transform: scale(0.8);
+ }
+.toggleContainer::before {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0%;
+  border-radius:20px;
+  background: #502215;
+  transition: all 0.3s;
+}
+.toggleContainer div {
+  padding: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  z-index: 1;
+  
+}
+.toggleCheckbox:checked + .toggleContainer::before {
+  left: 50%;
+}
+.toggleCheckbox:checked + .toggleContainer div:first-child{
+  color: #502215;
+  transition: color 0.3s;
+}
+.toggleCheckbox:checked + .toggleContainer div:last-child{
+  color: #ffffff;
+  transition: color 0.3s;
+}
+.toggleCheckbox + .toggleContainer div:first-child{
+  color: #ffffff;
+  transition: color 0.3s;
+}
+.toggleCheckbox + .toggleContainer div:last-child{
+  color: #502215;
+  transition: color 0.3s;
+}
+
+@media (max-width: 900px) {
+  .toggleContainer {
+    margin-top: 30px;
+    width: 40%;
+  }
+}
+@media (max-width: 640px) {
+  .toggleContainer {
+    margin-top: 30px;
+    width: 55%;
+    font-size: 12px;
+  }
+}
+
+
+

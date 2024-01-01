@@ -1,0 +1,62 @@
+.positioned-element {
+    position: absolute;
+    transform: translate(-50%, -100%);
+}
+.mesBox-dest {
+    width: 100%;
+    height: 100%;
+}
+.nameCanteen-dest {
+    position: absolute;
+    transform: translate(-50%, -75%);
+    top: 50%;
+    left: 50%;
+    font-size: 14px;
+    cursor: pointer;
+}
+.mesBox-items{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 150px;
+    height: 78px;
+}
+.marked-dest{
+    position: absolute;
+    transform: translate(10%, -50%);
+    top: 0%;
+    right: 0%;
+    font-size: 50px;
+    color : red;
+}
+.showName {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    font-weight: 800;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .showName.toggled {
+    background-color: #30b230;
+  }
+
+  @media (max-width: 900px) {
+    .mesBox-items{
+        width: 100px;
+        height: 52px;
+    }
+    .nameCanteen-dest {
+        font-size: 9px;
+    }
+    .marked-dest{
+        font-size: 30px;
+    }
+    
+  }

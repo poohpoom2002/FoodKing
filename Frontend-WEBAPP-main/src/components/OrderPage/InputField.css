@@ -1,0 +1,45 @@
+@media (min-width: 1024px){
+    .input-field {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .input-field label {
+        text-align: left;
+    }
+
+
+    .input-field input {
+        background-color: #ffffff;
+        color: #502215;
+        border-radius: 20px;
+        height: 5px;
+        padding: 20px;
+        font-size: 20px;
+        font-family: 'Mitr', sans-serif;
+        width: 250px; /* Make text fields take up the full width of the container */
+    }
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+    .input-field {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .input-field label {
+        text-align: left;
+    }
+
+
+    .input-field input {
+        border-radius: 20px;
+        height: 5px;
+        padding: 15px;
+        font-size: 15px;
+        font-family: 'Mitr', sans-serif;
+        width: 250px; /* Make text fields take up the full width of the container */
+    }
+}
